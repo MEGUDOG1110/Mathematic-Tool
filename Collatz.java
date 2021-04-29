@@ -3,7 +3,7 @@ class Collatz {
         Input nInput = new Input();
         int n = nInput.inputOne();
         
-        System.out.print();
+        System.out.print(n);
         int i = 0;
         while(n > 1){
             if (n % 2 == 0) {
