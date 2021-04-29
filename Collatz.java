@@ -2,8 +2,8 @@ class Collatz {
     public void nCollatz(){
         Input nInput = new Input();
         int n = nInput.inputOne();
-
-        System.out.print(n);
+        
+        System.out.print();
         int i = 0;
         while(n > 1){
             if (n % 2 == 0) {
