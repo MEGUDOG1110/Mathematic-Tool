@@ -18,6 +18,6 @@ class Explain {
     }
 
     private void printBorder() {
-        System.out.println("-------------------------------------");
+        System.out.println("-----------------------------------");
     }
 }

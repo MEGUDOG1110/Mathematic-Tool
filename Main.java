@@ -15,7 +15,7 @@ public class Main {
 
         switch (num){
             case 0:
-                System.out.println("Finish. Bye...");
+                System.out.println("Finish. Bye!");
                 break;
             case 1:
                 Fact nFact = new Fact();
