@@ -1,14 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hi! This Tool name is Mathematics.");
-        System.out.println("[Menu]\n" +
-                            "1:Prime Factorization\n"+  //素因数分解
-                            "2:Euclid's Algorithm\n"+   //ユークリッドの互除法
-                            "3:Collatz Conjecture");    //コラッツ予想
-
+        
+        Menu menu = new Menu();
         Input nInput = new Input();
         Explain explain = new Explain();
 
+        menu.printMenu1();
         int num = nInput.inputNum();
         System.out.print("Your choice is ");
         explain.printText(num);
