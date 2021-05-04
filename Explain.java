@@ -1,4 +1,4 @@
-class Explain {
+class Explain extends Menu{
     public void printText(int m) {
         switch (m) {
             case 1:
@@ -15,9 +15,5 @@ class Explain {
                 printBorder();
                 break;
         }
-    }
-
-    private void printBorder() {
-        System.out.println("-----------------------------------");
     }
 }
