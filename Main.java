@@ -1,10 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("---------------\n"+
-                           "Mathematic Tool\n"+
-                           "---------------");
-        
+        Explain explain = new Explain();
         Menu menu = new Menu();
+        explain.printName();
         menu.Menu();
     }
 }
