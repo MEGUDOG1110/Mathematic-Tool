@@ -9,20 +9,20 @@ class Input extends Menu{
         return num;
     }
     
-    public void inputChoice() {                 // Yes or No 選択
+    public void inputContinue() {                 // Yes or No 選択
         System.out.print("Continue? (Y/N) : ");
         String str = scanner.next();
         switch (str) {
             case "Y", "y":
                 System.out.print("\033[H\033[2J");
-                super.Menu();
+                super.Main();;
                 break;
             case "N", "n":
                 System.out.println("Finish. Bye!");
                 break;
             default:
                 System.out.println("Input Error!");
-                inputChoice();
+                inputContinue();
         }
     }
 
