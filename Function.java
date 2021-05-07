@@ -7,6 +7,9 @@ class Function extends Menu{
                     Fact nFact = new Fact();
                     nFact.nFact();
                     break;
+                default:
+                    System.out.println("Input Error!");
+                    nInput.inputContinue();
             }
         }else if (x=="H"){ //高校数学メニュー
             switch(y){
@@ -14,6 +17,9 @@ class Function extends Menu{
                     Euclid nEuclid = new Euclid();
                     nEuclid.nEuclid();
                     break;
+                default:
+                    System.out.println("Input Error!");
+                    nInput.inputContinue();
             }
         }else if(x=="O"){ //その他メニュー
             switch (y) {
@@ -21,6 +27,9 @@ class Function extends Menu{
                     Collatz nCollatz = new Collatz();
                     nCollatz.nCollatz();
                     break;
+                default:
+                    System.out.println("Input Error!");
+                    nInput.inputContinue();
             }
         }
         nInput.inputContinue();

@@ -15,7 +15,7 @@ class Input extends Menu{
         switch (str) {
             case "Y", "y":
                 System.out.print("\033[H\033[2J");
-                super.Main();;
+                super.Main();
                 break;
             case "N", "n":
                 System.out.println("Finish. Bye!");

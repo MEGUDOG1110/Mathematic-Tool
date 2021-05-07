@@ -17,5 +17,6 @@ class Collatz {
                 System.out.println();
             }
         }
+        System.out.println();
     }
 }

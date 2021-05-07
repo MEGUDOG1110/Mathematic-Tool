@@ -27,6 +27,10 @@ class Menu extends Main{
             case 4: //その他
                 nFunction.function("O", process(n1, Other));
                 break;
+            default:
+                System.out.println("Input Error!");
+                nInput.inputContinue();
+                this.Menu();
         }
     }
 
