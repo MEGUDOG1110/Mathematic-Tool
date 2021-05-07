@@ -10,7 +10,7 @@ class Input extends Menu{
     }
     
     public void inputContinue() {                 // Yes or No 選択
-        System.out.print("Continue? (Y/N) : ");
+        System.out.print("続けますか？ (Y/N) : ");
         String str = scanner.next();
         switch (str) {
             case "Y", "y":

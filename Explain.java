@@ -1,7 +1,7 @@
 class Explain extends Menu{
     public void printName(){
         super.printBorder();
-        System.out.println("Mathematic Tool");
+        System.out.println("          Mathematic Tool");
         super.printBorder();
     }
 

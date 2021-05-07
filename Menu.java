@@ -1,12 +1,13 @@
 class Menu extends Main{
     String[] Level = { "終了", "Mathematic Toolについて", "中学数学", "高校数学", "その他" };
-    String[] Junior = { "戻る","素因数分解（３年）" };
+    String[] Junior = { "戻る","素因数分解（３年）", "AQAK" };
     String[] High = { "戻る", "ユークリッドの互除法（数学Ａ）" };
     String[] Other = { "戻る", "コラッツ予想" };
     
     public void Menu(){
         Input nInput = new Input();
         Explain explain = new Explain();
+        Function nFunction = new Function();
         
         int n1 = this.mainMenu();
         switch (n1) {
@@ -18,22 +19,13 @@ class Menu extends Main{
                 nInput.inputContinue();
                 break;
             case 2: //中学数学
-                System.out.print("\033[H\033[2J");
-                System.out.println("［" + Level[n1] + "メニュー］");
-                this.printJunior();
-                this.subMenu(Junior);
+                nFunction.function("J", process(n1, Junior));
                 break;
             case 3: //高校数学
-                System.out.print("\033[H\033[2J");
-                System.out.println("［" + Level[n1] + "メニュー］");
-                this.printHigh();
-                subMenu(High);
+                nFunction.function("H", process(n1, High));
                 break;
             case 4: //その他
-                System.out.print("\033[H\033[2J");
-                System.out.println("［" + Level[n1] + "メニュー］");
-                this.printOther();
-                subMenu(Other);
+                nFunction.function("O", process(n1, Other));
                 break;
         }
     }
@@ -46,7 +38,14 @@ class Menu extends Main{
         return num;
     }
 
-    public void subMenu(String[] s){
+    public int process(int n, String[] s){
+        System.out.print("\033[H\033[2J");
+        System.out.println("［" + Level[n] + "メニュー］");
+        printContent(s);
+        return subMenu(s);
+    }
+
+    public int subMenu(String[] s){
         Input nInput = new Input();
         int n2 = nInput.inputNum();
         System.out.print("\033[H\033[2J");
@@ -55,9 +54,10 @@ class Menu extends Main{
                 Menu();
                 break;
             default:
-                printContent(s);
+                System.out.println(s[n2]);
                 break;
         }
+        return n2;
     }
 
     public void printLevel() {
@@ -66,26 +66,8 @@ class Menu extends Main{
         }
     }
 
-    public void printJunior() {
-        for (int l = 0; l < Junior.length; l++) {
-            System.out.println(l + ":" + Junior[l]);
-        }
-    }
-
-    public void printHigh() {
-        for (int l = 0; l < High.length; l++) {
-            System.out.println(l + ":" + High[l]);
-        }
-    }
-
-    public void printOther() {
-        for (int l = 0; l < Other.length; l++) {
-            System.out.println(l + ":" + Other[l]);
-        }
-    }
-
     public void printContent(String[] c) {
-        for (int l = 1; l < Other.length; l++) {
+        for (int l = 0; l < c.length; l++) {
             System.out.println(l + ":" + c[l]);
         }
     }
@@ -99,4 +81,5 @@ class Menu extends Main{
         explain.printName();
         Menu();
     }
+
 }
