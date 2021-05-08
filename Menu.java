@@ -1,6 +1,8 @@
 class Menu extends Main{
-    String[] Level = { "終了", "Mathematic Toolについて", "中学数学", "高校数学", "その他" };
-    String[] Junior = { "戻る","素因数分解（３年）", "AQAK" };
+    String[] Level = { "終了", 
+                       "Mathematic Toolについて",
+                       "中学数学", "高校数学", "その他" };
+    String[] Junior = { "戻る","素因数分解（３年）"};
     String[] High = { "戻る", "ユークリッドの互除法（数学Ａ）" };
     String[] Other = { "戻る", "コラッツ予想" };
     
@@ -83,7 +85,7 @@ class Menu extends Main{
     public void Main() {
         Explain explain = new Explain();
         explain.printName();
-        Menu();
+        this.Menu();
     }
 
 }
