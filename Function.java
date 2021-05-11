@@ -1,7 +1,6 @@
 class Function extends Menu{
     public void function(String x, int y){
         Input nInput = new Input();
-        Explain explain = new Explain();
         
         if(x=="J"){ //中学数学メニュー
             switch(y){

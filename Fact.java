@@ -1,6 +1,8 @@
 class Fact {
     public void nFact() {
         Input nInput = new Input();
+        Explain explain = new Explain();
+        explain.exFact();
         int n = nInput.inputOne();
         if(n < 2){
             System.out.println("Input Error! ( n > 2 )");
