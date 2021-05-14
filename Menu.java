@@ -4,7 +4,7 @@ class Menu extends Main{
                        "中学数学", "高校数学", "その他" };
     String[] Junior = { "戻る","素因数分解（３年）"};
     String[] High = { "戻る", "ユークリッドの互除法（数学Ａ）" };
-    String[] Other = { "戻る", "コラッツ予想" };
+    String[] Other = { "戻る", "コラッツの予想" };
     
     public void Menu(){
         Input nInput = new Input();
@@ -17,6 +17,7 @@ class Menu extends Main{
                 System.out.println("Finish. Bye!");
                 break;
             case 1:
+                System.out.print("\033[H\033[2J");
                 explain.printEx();
                 nInput.inputContinue();
                 break;
@@ -39,6 +40,7 @@ class Menu extends Main{
     public int mainMenu() {
         System.out.println("［メインメニュー］");
         this.printLevel();
+        printBorder();
         Input nInput = new Input();
         int num = nInput.inputNum();
         return num;
@@ -53,6 +55,7 @@ class Menu extends Main{
 
     public int subMenu(String[] s){
         Input nInput = new Input();
+        printBorder();
         int n2 = nInput.inputNum();
         System.out.print("\033[H\033[2J");
         switch(n2){
@@ -80,6 +83,10 @@ class Menu extends Main{
     
     public void printBorder() {
         System.out.println("-----------------------------------");
+    }
+
+    public void printlBorder() {
+        System.out.println("------------------------------------------------------------------------------");
     }
 
     public void Main() {

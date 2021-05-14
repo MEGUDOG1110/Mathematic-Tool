@@ -1,6 +1,8 @@
 class Collatz {
     public void nCollatz() {
         Input nInput = new Input();
+        Explain explain = new Explain();
+        explain.exCollatz();
         int n = nInput.inputOne();
 
         System.out.print(n);

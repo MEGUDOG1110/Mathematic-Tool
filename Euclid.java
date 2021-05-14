@@ -1,6 +1,8 @@
 class Euclid {
     public void nEuclid() {
         Input nInput = new Input();
+        Explain explain = new Explain();
+        explain.exEuclid();
         int[] n = nInput.inputTwo();
 
         int bar = 0;
