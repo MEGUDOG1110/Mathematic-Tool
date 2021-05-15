@@ -19,10 +19,13 @@
 現在は4年生で絶賛就職活動中です！
 
 #### 2.**Mathematics**について
+*Coming soon* :relaxed:
 
 #### 3.機能紹介
+*Coming soon* :relaxed:
 
 #### 4.内容紹介
+*Coming soon* :relaxed:
 
 #### 5.参考にした書籍、サイト
 このMathematic Toolを作成するにあたって、以下を参考にしました。
