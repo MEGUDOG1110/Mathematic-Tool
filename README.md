@@ -30,14 +30,11 @@
 #### 5.参考にした書籍、サイト
 このMathematic Toolを作成するにあたって、以下を参考にしました。
 
-> **中学数学の基本問題**
-> https://www.geisya.or.jp/~mwm48961/math/index_m.htm
+> [**中学数学の基本問題**](https://www.geisya.or.jp/~mwm48961/math/index_m.htm)
 
-> **高校数学の基本問題** 
-> https://www.geisya.or.jp/~mwm48961/koukou/index_m.htm
+> [**高校数学の基本問題**](https://www.geisya.or.jp/~mwm48961/koukou/index_m.htm)
 
-> **四則演算だけの未解決問題【コラッツ予想】** 
-> <img src="https://img.youtube.com/vi/-j5ZWffcnQ0/0.jpg" width="450px">
+> [**四則演算だけの未解決問題【コラッツ予想】**](https://www.youtube.com/watch?v=-j5ZWffcnQ0) 
 
 ***
 最終更新日：2021年5月15日
