@@ -4,7 +4,7 @@ class Menu extends Main{
                        "中学数学", "高校数学", "その他" };
     String[] Junior = { "戻る","素因数分解（３年）"};
     String[] High = { "戻る", "ユークリッドの互除法（数学Ａ）" };
-    String[] Other = { "戻る", "コラッツの予想" };
+    String[] Other = { "戻る", "コラッツ予想" };
     
     public void Menu(){
         Input nInput = new Input();
