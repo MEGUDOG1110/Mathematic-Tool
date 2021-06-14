@@ -28,5 +28,8 @@ class Euclid {
             y = d;
         }
         System.out.println("GCD of "+n[0]+" & "+n[1]+" is "+x);
+        if(x==1){
+            System.out.println( n[0] + " & " + n[1] + "are prime to each other.");
+        }
     }
 }
